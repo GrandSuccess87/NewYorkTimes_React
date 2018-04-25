@@ -5,14 +5,14 @@ const articlesController = require("../../controllers/articlesController");
 // Define any API routes first
 
 router
-.route("/")
-.get(articlesController.findAll)
+  .route("/")
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 
 // Matches with "/api/article/:id"
 router
   .route("/api/articles/")
   // Get saved articles
-  .get(articlesController.findById)
+  .get(articlesController.find)
   // Save articles
   .put(articlesController.update)
 
