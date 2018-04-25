@@ -1,0 +1,26 @@
+{
+  "name": "newyorktimes_react.js",
+  "version": "1.0.0",
+  "description": "New York Times React App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently 'node server.js' 'node scripts/start-client.js' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrandSuccess87/NewYorkTimes_React.Js.git"
+  },
+  "author": "Quintessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrandSuccess87/NewYorkTimes_React.Js/issues"
+  },
+  "homepage": "https://github.com/GrandSuccess87/NewYorkTimes_React.Js#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16"
+  }
+}
